@@ -1,3 +1,5 @@
+/* Правење на современ калкулатор */
+
 #include <stdio.h>
 #include <stdlib.h>
 
