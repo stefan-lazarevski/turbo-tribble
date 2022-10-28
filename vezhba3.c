@@ -15,7 +15,7 @@ int main()
     scanf("%d", &integer2);
 
     sum = integer1 + integer2;
-    kol= (float) integer1 / integer2;
+    kol= (float) integer1 / integer2;  //namesto float mozhi i 1.0 da se koristi
 
     printf("Nivnata suma e %d\n", sum);
     printf("Nivniot kolicnik e %.2f\n", kol);
