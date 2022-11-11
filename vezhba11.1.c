@@ -20,3 +20,33 @@ Input	Result
 2057
 I*/
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int p1, c1, p2, c2, p3;
+    scanf("%d %d %d %d %d", &p1, &c1, &p2, &c2, &p3);
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+
+    int rez = 0;
+
+    if (a > c2) rez += a * p3;
+    else if (a > c1) rez += a * p2;
+    else rez += a * p1;
+
+    if (b > c2) rez += b * p3;
+    else if (b > c1) rez += b * p2;
+    else rez += b * p1;
+
+    if (c > c2) rez += c * p3;
+    else if (c > c1) rez += c * p2;
+    else rez  += c * p1;
+
+    printf("%d", rez);
+
+
+    return 0;
+}
