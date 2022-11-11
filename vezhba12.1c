@@ -16,3 +16,32 @@ Input	Result
 10 1000 20 2500 30
 3800
 790.00 */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+   int procent0, prag1, prag2, procent1, procent2, iznos;
+   scanf("%d %d %d %d %d %d", &procent0, &prag1, &prag2, &procent1,
+         &procent2, &iznos);
+   float danok_total = 0;
+
+   int zaProcent0 = iznos >= prag1 ? prag1 : iznos;
+   int zaProcent1 = 0, zaProcent2 = 0;
+    if(iznos>prag1 && iznos<=prag2){
+        zaProcent1 = iznos - prag1;
+    } if (iznos>prag2) {
+        zaProcent1 = prag2 - prag1;
+        zaProcent2 = iznos - prag2;
+    } printf("%.2f",
+             zaProcent0*procent0/100.0 +
+             zaProcent1*procent1/100.0 +
+             zaProcent2*procent2/100.0);
+
+
+
+    return 0;
+}
